@@ -1,0 +1,208 @@
+body {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    color: aliceblue;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+}
+
+header {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-right: 50px;
+}
+
+header .logo img {
+    width: 100px;
+    border-radius: 20px;
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* To improve responsiveness */
+}
+
+nav ul li {
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero-section img {
+    margin: 20px;
+    margin-right: 50px;
+    max-width: 100%;
+    max-height: 717px;
+    display: block;
+    border-radius: 20px;
+    object-fit: cover; /* Ensures the image covers the section evenly */
+}
+
+.about-me {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    backdrop-filter: blur(200px);
+    margin-right: 50px;
+}
+
+.about-me .about-head {
+    text-align: center;
+    font-size: 40px;
+}
+
+.about-me img {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact .tb table {
+    margin: 0 auto; /* Center the table */
+    max-width: 100%;
+}
+
+.contact .con {
+    text-align: center;
+}
+
+.contact {
+    background: rgba(255, 255, 255, 0.2);
+    color: aliceblue;
+    margin: 20px;
+    padding: 10px;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    backdrop-filter: blur(200px);
+    margin-right: 50px;
+}
+
+.contact img {
+    max-width: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.contact img:hover {
+    opacity: 0.3;
+}
+
+.footer {
+    background: rgba(255, 255, 255, 0.2);
+    color: aliceblue;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    backdrop-filter: blur(200px);
+    margin-right: 50px;
+    text-align: center;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-section img {
+        margin: 10px;
+        width: 100%;
+        height: auto; /* Ensure the image scales properly on mobile */
+    }
+
+    .about-me {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .about-me img {
+        width: 150px; /* Smaller image size for mobile */
+    }
+
+    p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .contact {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .contact img {
+        width: 40px; /* Smaller icon size for mobile */
+    }
+
+    .footer {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .about-me .about-head {
+        font-size: 30px; /* Smaller heading for very small screens */
+    }
+
+    p {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+
+    .about-me img {
+        width: 120px; /* Smaller image size for very small screens */
+    }
+
+    .contact img {
+        width: 30px; /* Smaller icon size for very small screens */
+    }
+}
